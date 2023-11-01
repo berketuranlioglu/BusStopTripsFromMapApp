@@ -17,7 +17,7 @@ class MainMapPresenter {
         self.mainMapViewDelegate = mainMapViewDelegate
     }
     
-    func loadStations() {
+    func fetchStations() {
         StationManager.shared.fetchStations { stations in
             self.mainMapViewDelegate?.didFetchStations(stations: stations)
         }

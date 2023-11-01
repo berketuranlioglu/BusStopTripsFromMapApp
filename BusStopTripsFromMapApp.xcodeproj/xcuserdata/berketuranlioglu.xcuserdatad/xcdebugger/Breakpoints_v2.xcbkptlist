@@ -7,367 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "43211C91-742F-4AB1-BC0A-4DDA97003F37"
+            uuid = "F40609E2-16DC-41D5-8676-CC7BFABB3931"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BusStopTripsFromMapApp/Views/MainMapViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "43211C91-742F-4AB1-BC0A-4DDA97003F37 - 36759bc9da23d65c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "26">
-               </Location>
-               <Location
-                  uuid = "43211C91-742F-4AB1-BC0A-4DDA97003F37 - 36759bc9da23d65c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E6E034B5-D3A0-4144-8C63-2C30CD2E7567"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Models/StationManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "fetchStations(handler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E6E034B5-D3A0-4144-8C63-2C30CD2E7567 - 1161d702a8c8e44"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.StationManager.fetchStations() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "181">
-               </Location>
-               <Location
-                  uuid = "E6E034B5-D3A0-4144-8C63-2C30CD2E7567 - 1161d702a8c8d86"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.StationManager.fetchStations() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "169">
-               </Location>
-               <Location
-                  uuid = "E6E034B5-D3A0-4144-8C63-2C30CD2E7567 - d520ba30fa73c4a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.StationManager.fetchStations(handler: (Swift.Array&lt;BusStopTripsFromMapApp.StationModel&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "212">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7B762731-C755-4F1E-B38C-1A815F7B9E0B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Models/StationManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "fetchStations(handler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7B762731-C755-4F1E-B38C-1A815F7B9E0B - f096124b42729c52"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BusStopTripsFromMapApp.StationManager.fetchStations() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "760">
-               </Location>
-               <Location
-                  uuid = "7B762731-C755-4F1E-B38C-1A815F7B9E0B - f096124b42729c1c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BusStopTripsFromMapApp.StationManager.fetchStations() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "789">
-               </Location>
-               <Location
-                  uuid = "7B762731-C755-4F1E-B38C-1A815F7B9E0B - 3b4c4776a0208a1d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BusStopTripsFromMapApp.StationManager.fetchStations(handler: (Swift.Array&lt;BusStopTripsFromMapApp.StationModel&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "839">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3CDB3920-AEBC-4372-8106-1C089915C9AB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "didFetchStations(stations:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3CDB3920-AEBC-4372-8106-1C089915C9AB - bcea1bc0a5bc6216"
+                  uuid = "F40609E2-16DC-41D5-8676-CC7BFABB3931 - 4f5ae8f75cdc0d5f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapViewController.didFetchStations(stations: Swift.Array&lt;BusStopTripsFromMapApp.StationModel&gt;) -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in BusStopTripsFromMapApp.MainMapViewController.didFetchStations(stations: Swift.Array&lt;BusStopTripsFromMapApp.StationModel&gt;) -&gt; ()"
                   moduleName = "BusStopTripsFromMapApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Views/MainMapViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "109">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "135">
                </Location>
                <Location
-                  uuid = "3CDB3920-AEBC-4372-8106-1C089915C9AB - bcea1bc0a5bc6216"
+                  uuid = "F40609E2-16DC-41D5-8676-CC7BFABB3931 - 4f5ae8f75cdc0d5f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapViewController.didFetchStations(stations: Swift.Array&lt;BusStopTripsFromMapApp.StationModel&gt;) -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in BusStopTripsFromMapApp.MainMapViewController.didFetchStations(stations: Swift.Array&lt;BusStopTripsFromMapApp.StationModel&gt;) -&gt; ()"
                   moduleName = "BusStopTripsFromMapApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Views/MainMapViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "173">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "154">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "741A1D12-7C57-4180-B45F-722D982327B0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "didFailWithError(error:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "741A1D12-7C57-4180-B45F-722D982327B0 - 1ae51328e790a999"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapViewController.didFailWithError(error: Swift.Error) -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "741A1D12-7C57-4180-B45F-722D982327B0 - 1ae51328e790a97a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapViewController.didFailWithError(error: Swift.Error) -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "196">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9D721B2B-1211-487B-837F-C665DB288212"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5A753CE9-B5F1-4C78-BC2C-9E9F776DC8BF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Presenters/MainMapPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "loadStations()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5A753CE9-B5F1-4C78-BC2C-9E9F776DC8BF - f4a31ab8b91ab5f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapPresenter.loadStations() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Presenters/MainMapPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "22">
-               </Location>
-               <Location
-                  uuid = "5A753CE9-B5F1-4C78-BC2C-9E9F776DC8BF - f4a31ab8b91ab5f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BusStopTripsFromMapApp.MainMapPresenter.loadStations() -&gt; ()"
-                  moduleName = "BusStopTripsFromMapApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Presenters/MainMapPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "26">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "33DDD5E2-4B19-4F59-9669-348F97D0BD83"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Presenters/MainMapPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "loadStations()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A323139D-3FBB-494F-9298-9DFF569F1606"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusStopTripsFromMapApp/Views/MainMapViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "didFetchStations(stations:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
