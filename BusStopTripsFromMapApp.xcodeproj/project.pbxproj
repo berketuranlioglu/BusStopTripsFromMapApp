@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		2C3A984C2AF2870200956C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A984B2AF2870200956C91 /* AppDelegate.swift */; };
 		2C3A984E2AF2870200956C91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A984D2AF2870200956C91 /* SceneDelegate.swift */; };
-		2C3A98502AF2870200956C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A984F2AF2870200956C91 /* ViewController.swift */; };
 		2C3A98532AF2870200956C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3A98512AF2870200956C91 /* Main.storyboard */; };
 		2C3A98552AF2870500956C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3A98542AF2870500956C91 /* Assets.xcassets */; };
 		2C3A98582AF2870500956C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3A98562AF2870500956C91 /* LaunchScreen.storyboard */; };
+		2C3A98602AF2CE7800956C91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A985F2AF2CE7800956C91 /* Constants.swift */; };
+		2C3A98632AF2D03400956C91 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A98622AF2D03400956C91 /* StationModel.swift */; };
+		2C3A98692AF2D38500956C91 /* StationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A98682AF2D38500956C91 /* StationManager.swift */; };
+		2C3A986B2AF2D97900956C91 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */; };
+		2C3A986D2AF2DFB000956C91 /* MainMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C3A98482AF2870200956C91 /* BusStopTripsFromMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusStopTripsFromMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3A984B2AF2870200956C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C3A984D2AF2870200956C91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C3A984F2AF2870200956C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C3A98522AF2870200956C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C3A98542AF2870500956C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C3A98572AF2870500956C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C3A98592AF2870500956C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C3A985F2AF2CE7800956C91 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2C3A98622AF2D03400956C91 /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		2C3A98682AF2D38500956C91 /* StationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationManager.swift; sourceTree = "<group>"; };
+		2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
+		2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		2C3A984A2AF2870200956C91 /* BusStopTripsFromMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				2C3A98612AF2CFE700956C91 /* Models */,
+				2C3A98642AF2D03900956C91 /* Views */,
+				2C3A98652AF2D03F00956C91 /* Presenters */,
 				2C3A984B2AF2870200956C91 /* AppDelegate.swift */,
 				2C3A984D2AF2870200956C91 /* SceneDelegate.swift */,
-				2C3A984F2AF2870200956C91 /* ViewController.swift */,
-				2C3A98512AF2870200956C91 /* Main.storyboard */,
+				2C3A985F2AF2CE7800956C91 /* Constants.swift */,
 				2C3A98542AF2870500956C91 /* Assets.xcassets */,
 				2C3A98562AF2870500956C91 /* LaunchScreen.storyboard */,
 				2C3A98592AF2870500956C91 /* Info.plist */,
 			);
 			path = BusStopTripsFromMapApp;
+			sourceTree = "<group>";
+		};
+		2C3A98612AF2CFE700956C91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C3A98622AF2D03400956C91 /* StationModel.swift */,
+				2C3A98682AF2D38500956C91 /* StationManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C3A98642AF2D03900956C91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C3A98512AF2870200956C91 /* Main.storyboard */,
+				2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C3A98652AF2D03F00956C91 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C3A98502AF2870200956C91 /* ViewController.swift in Sources */,
+				2C3A986D2AF2DFB000956C91 /* MainMapPresenter.swift in Sources */,
+				2C3A986B2AF2D97900956C91 /* MainMapViewController.swift in Sources */,
 				2C3A984C2AF2870200956C91 /* AppDelegate.swift in Sources */,
+				2C3A98692AF2D38500956C91 /* StationManager.swift in Sources */,
+				2C3A98632AF2D03400956C91 /* StationModel.swift in Sources */,
 				2C3A984E2AF2870200956C91 /* SceneDelegate.swift in Sources */,
+				2C3A98602AF2CE7800956C91 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
