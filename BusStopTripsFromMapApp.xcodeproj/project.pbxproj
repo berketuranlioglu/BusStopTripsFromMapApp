@@ -17,6 +17,8 @@
 		2C3A98692AF2D38500956C91 /* StationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A98682AF2D38500956C91 /* StationManager.swift */; };
 		2C3A986B2AF2D97900956C91 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */; };
 		2C3A986D2AF2DFB000956C91 /* MainMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */; };
+		2CDE81FF2AF4065900DE915A /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE81FE2AF4065900DE915A /* TripListViewController.swift */; };
+		2CDE82012AF409BA00DE915A /* TripListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2C3A98682AF2D38500956C91 /* StationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationManager.swift; sourceTree = "<group>"; };
 		2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
 		2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapPresenter.swift; sourceTree = "<group>"; };
+		2CDE81FE2AF4065900DE915A /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
+		2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 			children = (
 				2C3A98512AF2870200956C91 /* Main.storyboard */,
 				2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */,
+				2CDE81FE2AF4065900DE915A /* TripListViewController.swift */,
+				2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,11 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C3A986D2AF2DFB000956C91 /* MainMapPresenter.swift in Sources */,
+				2CDE81FF2AF4065900DE915A /* TripListViewController.swift in Sources */,
 				2C3A986B2AF2D97900956C91 /* MainMapViewController.swift in Sources */,
 				2C3A984C2AF2870200956C91 /* AppDelegate.swift in Sources */,
 				2C3A98692AF2D38500956C91 /* StationManager.swift in Sources */,
 				2C3A98632AF2D03400956C91 /* StationModel.swift in Sources */,
 				2C3A984E2AF2870200956C91 /* SceneDelegate.swift in Sources */,
+				2CDE82012AF409BA00DE915A /* TripListTableViewCell.swift in Sources */,
 				2C3A98602AF2CE7800956C91 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
