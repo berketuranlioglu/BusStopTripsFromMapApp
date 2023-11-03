@@ -9,15 +9,13 @@ import UIKit
 
 class TripListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var stationLabel: UILabel!
+    @IBOutlet weak var busNameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var bookButton: UIButton!
     
-    override class func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    var action: (() -> Void)?
     
     @IBAction func bookButtonTapped(_ sender: Any) {
-        
+        action?()
     }
 }

@@ -14,7 +14,6 @@ class MainMapViewController: UIViewController {
     @IBOutlet weak var listTripsButton: UIButton!
     let locationManager = CLLocationManager()
     private let mainMapPresenter = MainMapPresenter()
-    private var isLoading: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +41,8 @@ class MainMapViewController: UIViewController {
         locationManager.startUpdatingLocation()
         
         // initial view is shown on below coordinates
-        let location = CLLocation(latitude: 41.04, longitude: 29)
-        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        let location = CLLocation(latitude: 41.04, longitude: 29.02)
+        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 20000, longitudinalMeters: 20000)
         
         mapView.setRegion(coordinateRegion, animated: true)
         mapView.showsUserLocation = true
@@ -51,7 +50,12 @@ class MainMapViewController: UIViewController {
     
     // IBActions
     @IBAction func listTripsButtonTapped(_ sender: Any) {
-        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = sb.instantiateViewController(withIdentifier: "TripListViewController") as? TripListViewController {
+            vc.trips = mainMapPresenter.selectedStation!.trips
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
+        }
     }
 }
 

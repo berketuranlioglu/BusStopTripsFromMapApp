@@ -19,6 +19,7 @@ protocol MainMapViewDelegate {
 class MainMapPresenter {
     private var mainMapViewDelegate: MainMapViewDelegate?
     var stations: [StationModel] = []
+    var selectedStation: StationModel?
     
     func setViewDelegate(as mainMapViewDelegate: MainMapViewDelegate?) {
         self.mainMapViewDelegate = mainMapViewDelegate
@@ -34,6 +35,7 @@ class MainMapPresenter {
     func annotationSelected(annotationView: MKAnnotationView) {
         if let annotation = annotationView.annotation {
             if let annotationIndex = stations.firstIndex(where: { $0.id == Int(annotation.subtitle!!) }) {
+                self.selectedStation = stations[annotationIndex]
                 let tripsCount = stations[annotationIndex].trips.count
                 let tripsString = tripsCount == 1 ? "\(tripsCount) Trip" : "\(tripsCount) Trips"
                 self.mainMapViewDelegate?.displayTripsInfo(annotationView: annotationView, trips: tripsString)

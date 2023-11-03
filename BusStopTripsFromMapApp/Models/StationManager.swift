@@ -49,4 +49,8 @@ class StationManager {
             return nil
         }
     }
+    
+    func sendTripRequest() {
+        
+    }
 }
