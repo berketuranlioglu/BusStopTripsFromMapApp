@@ -67,11 +67,25 @@ extension TripListViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: - TripListViewDelegate
 extension TripListViewController: TripListViewDelegate {
-    func didRequestFailWithError(error: Error) {
-        print(error)
+    func handleResponse(isSuccess: Bool) {
+        if isSuccess {
+            self.dismiss(animated: true)
+        } else {
+            DispatchQueue.main.async {
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                if let vc = sb.instantiateViewController(withIdentifier: "ErrorPopupViewController") as? ErrorPopupViewController {
+                    vc.popupHeaderText = "The trip you selected is full."
+                    vc.popupDetailText = "Please select another one."
+                    vc.selectTripButtonText = "Select a Trip"
+                    vc.modalPresentationStyle = .overCurrentContext
+                    vc.modalTransitionStyle = .crossDissolve
+                    self.present(vc, animated: true)
+                }
+            }
+        }
     }
     
-    func sendTripRequest() {
-        
+    func didRequestFailWithError(error: Error) {
+        print(error)
     }
 }

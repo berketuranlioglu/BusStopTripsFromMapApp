@@ -21,6 +21,8 @@
 		2CDE81FF2AF4065900DE915A /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE81FE2AF4065900DE915A /* TripListViewController.swift */; };
 		2CDE82012AF409BA00DE915A /* TripListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */; };
 		2CE8532B2AF6992A00399CA9 /* ErrorPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8532A2AF6992A00399CA9 /* ErrorPopupViewController.swift */; };
+		2CFCE70B2AF6DA99006C1BB1 /* DetailCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFCE7092AF6DA99006C1BB1 /* DetailCalloutView.swift */; };
+		2CFCE70C2AF6DA99006C1BB1 /* DetailCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFCE70A2AF6DA99006C1BB1 /* DetailCalloutView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2CDE81FE2AF4065900DE915A /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
 		2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTableViewCell.swift; sourceTree = "<group>"; };
 		2CE8532A2AF6992A00399CA9 /* ErrorPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopupViewController.swift; sourceTree = "<group>"; };
+		2CFCE7092AF6DA99006C1BB1 /* DetailCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCalloutView.swift; sourceTree = "<group>"; };
+		2CFCE70A2AF6DA99006C1BB1 /* DetailCalloutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCalloutView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,11 @@
 		2C3A98642AF2D03900956C91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2CFCE7042AF6D83E006C1BB1 /* Helpers */,
 				2C3A98512AF2870200956C91 /* Main.storyboard */,
 				2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */,
 				2CDE81FE2AF4065900DE915A /* TripListViewController.swift */,
 				2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */,
-				2CE8532A2AF6992A00399CA9 /* ErrorPopupViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,10 +113,36 @@
 		2C3A98652AF2D03F00956C91 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */,
-				2C9BA5ED2AF580A900DCAD36 /* TripListPresenter.swift */,
+				2CFCE7022AF6D7C6006C1BB1 /* MainMap */,
+				2CFCE7032AF6D7D1006C1BB1 /* TripList */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2CFCE7022AF6D7C6006C1BB1 /* MainMap */ = {
+			isa = PBXGroup;
+			children = (
+				2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */,
+			);
+			path = MainMap;
+			sourceTree = "<group>";
+		};
+		2CFCE7032AF6D7D1006C1BB1 /* TripList */ = {
+			isa = PBXGroup;
+			children = (
+				2C9BA5ED2AF580A900DCAD36 /* TripListPresenter.swift */,
+			);
+			path = TripList;
+			sourceTree = "<group>";
+		};
+		2CFCE7042AF6D83E006C1BB1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE8532A2AF6992A00399CA9 /* ErrorPopupViewController.swift */,
+				2CFCE7092AF6DA99006C1BB1 /* DetailCalloutView.swift */,
+				2CFCE70A2AF6DA99006C1BB1 /* DetailCalloutView.xib */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFCE70C2AF6DA99006C1BB1 /* DetailCalloutView.xib in Resources */,
 				2C3A98582AF2870500956C91 /* LaunchScreen.storyboard in Resources */,
 				2C3A98552AF2870500956C91 /* Assets.xcassets in Resources */,
 				2C3A98532AF2870200956C91 /* Main.storyboard in Resources */,
@@ -186,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFCE70B2AF6DA99006C1BB1 /* DetailCalloutView.swift in Sources */,
 				2C3A986D2AF2DFB000956C91 /* MainMapPresenter.swift in Sources */,
 				2CDE81FF2AF4065900DE915A /* TripListViewController.swift in Sources */,
 				2C3A986B2AF2D97900956C91 /* MainMapViewController.swift in Sources */,

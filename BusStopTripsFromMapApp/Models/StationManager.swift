@@ -52,7 +52,7 @@ class StationManager {
         }
     }
     
-    func sendTripRequest(stationId: Int, tripId: Int, handler: @escaping ((Any) -> Void)) {
+    func sendTripRequest(stationId: Int, tripId: Int, handler: @escaping ((Int) -> Void)) {
         let requestUrl = self.mainUrl + "/\(stationId)/trips/\(tripId)"
         
         // null safety for url

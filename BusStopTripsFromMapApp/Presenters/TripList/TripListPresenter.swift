@@ -6,8 +6,8 @@
 //
 
 protocol TripListViewDelegate {
-    func sendTripRequest()
     func didRequestFailWithError(error: Error)
+    func handleResponse(isSuccess: Bool)
 }
 
 class TripListPresenter {
@@ -18,6 +18,8 @@ class TripListPresenter {
     }
     
     func sendTripRequest(stationId: Int, tripId: Int) {
-        StationManager.shared.sendTripRequest(stationId: stationId, tripId: tripId)
+        StationManager.shared.sendTripRequest(stationId: stationId, tripId: tripId) { responseStatus in
+            self.tripListViewDelegate?.handleResponse(isSuccess: responseStatus < 400)
+        }
     }
 }

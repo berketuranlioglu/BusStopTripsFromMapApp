@@ -20,11 +20,13 @@ class ErrorPopupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         setViews()
     }
 
     func setViews() {
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        popupView.layer.cornerRadius = 12
+        
         popupHeaderLabel.text = popupHeaderText ?? "The trip you selected is full."
         popupDetailLabel.text = popupDetailText ?? "Please select another one."
         

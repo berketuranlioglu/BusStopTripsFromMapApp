@@ -67,15 +67,9 @@ extension MainMapViewController: MKMapViewDelegate {
             return nil
         }
         
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")
+        var annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
         
-        if annotationView == nil {
-            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
-        } else {
-            annotationView?.annotation = annotation
-        }
-        
-        annotationView?.image = UIImage(named: Constants.imagePoint)
+        annotationView.image = UIImage(named: Constants.imagePoint)
         
         return annotationView
     }
