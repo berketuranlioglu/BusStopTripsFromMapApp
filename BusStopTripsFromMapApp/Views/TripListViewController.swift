@@ -15,6 +15,7 @@ class TripListViewController: UIViewController {
     
     private let tripListPresenter = TripListPresenter()
     var trips: [TripModel] = []
+    var selectedStation: StationModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +57,8 @@ extension TripListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.bookButton.backgroundColor = UIColor(named: Constants.colorPrimaryBlue)
         cell.bookButton.layer.cornerRadius = cell.bookButton.bounds.height / 2
         
-        cell.action = {
-            self.tripListPresenter.sendTripRequest()
+        cell.bookButtonAction = {
+            self.tripListPresenter.sendTripRequest(stationId: self.selectedStation!.id, tripId: detailedInfo.id)
         }
         
         return cell
@@ -66,6 +67,10 @@ extension TripListViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: - TripListViewDelegate
 extension TripListViewController: TripListViewDelegate {
+    func didRequestFailWithError(error: Error) {
+        print(error)
+    }
+    
     func sendTripRequest() {
         
     }

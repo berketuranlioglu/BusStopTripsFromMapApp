@@ -13,9 +13,9 @@ class TripListTableViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var bookButton: UIButton!
     
-    var action: (() -> Void)?
+    var bookButtonAction: (() -> Void)?
     
     @IBAction func bookButtonTapped(_ sender: Any) {
-        action?()
+        bookButtonAction?()
     }
 }

@@ -7,6 +7,7 @@
 
 protocol TripListViewDelegate {
     func sendTripRequest()
+    func didRequestFailWithError(error: Error)
 }
 
 class TripListPresenter {
@@ -16,7 +17,7 @@ class TripListPresenter {
         self.tripListViewDelegate = tripListViewDelegate
     }
     
-    func sendTripRequest() {
-        StationManager.shared.sendTripRequest()
+    func sendTripRequest(stationId: Int, tripId: Int) {
+        StationManager.shared.sendTripRequest(stationId: stationId, tripId: tripId)
     }
 }

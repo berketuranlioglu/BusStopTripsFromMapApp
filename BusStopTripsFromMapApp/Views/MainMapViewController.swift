@@ -53,6 +53,7 @@ class MainMapViewController: UIViewController {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         if let vc = sb.instantiateViewController(withIdentifier: "TripListViewController") as? TripListViewController {
             vc.trips = mainMapPresenter.selectedStation!.trips
+            vc.selectedStation = mainMapPresenter.selectedStation
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }

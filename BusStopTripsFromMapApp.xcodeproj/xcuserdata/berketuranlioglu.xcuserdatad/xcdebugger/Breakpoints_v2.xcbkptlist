@@ -3,4 +3,70 @@
    uuid = "B001E871-566B-42ED-8469-0D0C214A72DC"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3D89D2A-10CA-4953-B3F1-B4D65AAFD2D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BusStopTripsFromMapApp/Models/StationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "sendTripRequest(stationId:tripId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34F22104-8A1F-4DDB-AA2A-9256F805C3FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BusStopTripsFromMapApp/Models/StationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "sendTripRequest(stationId:tripId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "34F22104-8A1F-4DDB-AA2A-9256F805C3FA - ca7a6e9132399537"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BusStopTripsFromMapApp.StationManager.sendTripRequest(stationId: Swift.Int, tripId: Swift.Int) -&gt; ()"
+                  moduleName = "BusStopTripsFromMapApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1039">
+               </Location>
+               <Location
+                  uuid = "34F22104-8A1F-4DDB-AA2A-9256F805C3FA - d8446f5d7f204f68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BusStopTripsFromMapApp.StationManager.sendTripRequest(stationId: Swift.Int, tripId: Swift.Int) -&gt; ()"
+                  moduleName = "BusStopTripsFromMapApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/berketuranlioglu/Desktop/Swift/Volt%20Lines/BusStopTripsFromMapApp/BusStopTripsFromMapApp/Models/StationManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "183">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -20,6 +20,7 @@
 		2C9BA5EE2AF580A900DCAD36 /* TripListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BA5ED2AF580A900DCAD36 /* TripListPresenter.swift */; };
 		2CDE81FF2AF4065900DE915A /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE81FE2AF4065900DE915A /* TripListViewController.swift */; };
 		2CDE82012AF409BA00DE915A /* TripListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */; };
+		2CE8532B2AF6992A00399CA9 /* ErrorPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8532A2AF6992A00399CA9 /* ErrorPopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2C9BA5ED2AF580A900DCAD36 /* TripListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListPresenter.swift; sourceTree = "<group>"; };
 		2CDE81FE2AF4065900DE915A /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
 		2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTableViewCell.swift; sourceTree = "<group>"; };
+		2CE8532A2AF6992A00399CA9 /* ErrorPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */,
 				2CDE81FE2AF4065900DE915A /* TripListViewController.swift */,
 				2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */,
+				2CE8532A2AF6992A00399CA9 /* ErrorPopupViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				2C3A98632AF2D03400956C91 /* StationModel.swift in Sources */,
 				2C3A984E2AF2870200956C91 /* SceneDelegate.swift in Sources */,
 				2CDE82012AF409BA00DE915A /* TripListTableViewCell.swift in Sources */,
+				2CE8532B2AF6992A00399CA9 /* ErrorPopupViewController.swift in Sources */,
 				2C3A98602AF2CE7800956C91 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

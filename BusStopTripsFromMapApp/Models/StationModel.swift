@@ -12,12 +12,14 @@ struct StationModel: Identifiable, Codable {
     let center_coordinates: String
     let name: String
     let trips: [TripModel]
+    let trips_count: Int
     
-    init(id: Int, center_coordinates: String, name: String, trips: [TripModel]) {
+    init(id: Int, center_coordinates: String, name: String, trips: [TripModel], trips_count: Int) {
         self.id = id
         self.center_coordinates = center_coordinates
         self.name = name
         self.trips = trips
+        self.trips_count = trips_count
     }
 }
 
