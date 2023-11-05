@@ -26,6 +26,14 @@ class MainMapViewController: UIViewController {
         setInitialMapView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        mainMapPresenter.fetchStations()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        mapView.removeAnnotations(mapView.annotations)
+    }
+    
     // Setting up view
     func setButtonToDown() {
         let attributes: [NSAttributedString.Key: Any] = [
@@ -77,7 +85,8 @@ extension MainMapViewController: MKMapViewDelegate {
             } else {
                 annotationView?.annotation = annotation
             }
-        annotationView?.image = UIImage(named: Constants.imagePoint)
+        let imageString = self.mainMapPresenter.completedStation(annotationView: annotation)
+        annotationView?.image = UIImage(named: imageString)
         
         return annotationView
     }
@@ -95,7 +104,8 @@ extension MainMapViewController: MKMapViewDelegate {
            return
         }
         self.selectedAnnotationView = nil
-        view.image = UIImage(named: Constants.imagePoint)
+        let imageString = self.mainMapPresenter.completedStation(annotationView: view.annotation!)
+        view.image = UIImage(named: imageString)
         self.listTripsButton.isHidden = true
     }
 }
@@ -122,27 +132,12 @@ extension MainMapViewController: MainMapViewDelegate {
         DispatchQueue.main.async {
             let tripsBubble = UILabel()
             tripsBubble.text = trips
+            tripsBubble.font = UIFont(name: Fonts.montserratRegular, size: 14)
             
-            annotationView.image = UIImage(named: Constants.imagePoint)!.noir
+            annotationView.image = UIImage(named: Constants.imageSelectedPoint)
             annotationView.canShowCallout = true
             annotationView.detailCalloutAccessoryView = tripsBubble
             self.listTripsButton.isHidden = false
         }
     }
 }
-
-// MARK: - UIImage
-// new version to prevent using selected point image
-extension UIImage {
-    var noir: UIImage {
-        let context = CIContext(options: nil)
-        let currentFilter = CIFilter(name: "CIPhotoEffectNoir")!
-        currentFilter.setValue(CIImage(image: self), forKey: kCIInputImageKey)
-        let output = currentFilter.outputImage!
-        let cgImage = context.createCGImage(output, from: output.extent)!
-        let processedImage = UIImage(cgImage: cgImage, scale: scale, orientation: imageOrientation)
-
-        return processedImage
-    }
-}
-

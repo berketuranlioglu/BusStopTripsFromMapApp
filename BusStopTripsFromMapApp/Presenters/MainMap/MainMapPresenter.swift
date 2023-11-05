@@ -47,4 +47,14 @@ class MainMapPresenter {
         }
         
     }
+    
+    func completedStation(annotationView: MKAnnotation) -> String {
+        if let annotationIndex = stations.firstIndex(where: { $0.id == Int(annotationView.subtitle!!) }),
+           let completedStations = UserDefaults.standard.array(forKey: Constants.keyBookedStations) as? [Int] {
+            if completedStations.contains(where: { $0 == stations[annotationIndex].id }) {
+                return Constants.imageCompleted
+            }
+        }
+        return Constants.imagePoint
+    }
 }

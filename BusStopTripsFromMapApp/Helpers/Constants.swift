@@ -15,4 +15,7 @@ struct Constants {
     
     // Colors
     static let colorPrimaryBlue = "PrimaryBlue"
+    
+    // UserDefaults Keys
+    static let keyBookedStations = "bookedStations"
 }
