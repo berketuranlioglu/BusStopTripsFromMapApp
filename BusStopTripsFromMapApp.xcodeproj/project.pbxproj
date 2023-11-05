@@ -17,6 +17,12 @@
 		2C3A98692AF2D38500956C91 /* StationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A98682AF2D38500956C91 /* StationManager.swift */; };
 		2C3A986B2AF2D97900956C91 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */; };
 		2C3A986D2AF2DFB000956C91 /* MainMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */; };
+		2C4F048F2AF7AF4E004889D1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F048E2AF7AF4E004889D1 /* Fonts.swift */; };
+		2C4F04962AF7B19C004889D1 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F04912AF7B19C004889D1 /* Montserrat-Regular.ttf */; };
+		2C4F04972AF7B19C004889D1 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F04922AF7B19C004889D1 /* Montserrat-SemiBold.ttf */; };
+		2C4F04982AF7B19C004889D1 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F04932AF7B19C004889D1 /* Montserrat-Medium.ttf */; };
+		2C4F04992AF7B19C004889D1 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F04942AF7B19C004889D1 /* Montserrat-Light.ttf */; };
+		2C4F049A2AF7B19C004889D1 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F04952AF7B19C004889D1 /* Montserrat-Bold.ttf */; };
 		2C9BA5EE2AF580A900DCAD36 /* TripListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BA5ED2AF580A900DCAD36 /* TripListPresenter.swift */; };
 		2CDE81FF2AF4065900DE915A /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE81FE2AF4065900DE915A /* TripListViewController.swift */; };
 		2CDE82012AF409BA00DE915A /* TripListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */; };
@@ -36,6 +42,12 @@
 		2C3A98682AF2D38500956C91 /* StationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationManager.swift; sourceTree = "<group>"; };
 		2C3A986A2AF2D97900956C91 /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
 		2C3A986C2AF2DFB000956C91 /* MainMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapPresenter.swift; sourceTree = "<group>"; };
+		2C4F048E2AF7AF4E004889D1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		2C4F04912AF7B19C004889D1 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		2C4F04922AF7B19C004889D1 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		2C4F04932AF7B19C004889D1 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		2C4F04942AF7B19C004889D1 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		2C4F04952AF7B19C004889D1 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		2C9BA5ED2AF580A900DCAD36 /* TripListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListPresenter.swift; sourceTree = "<group>"; };
 		2CDE81FE2AF4065900DE915A /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
 		2CDE82002AF409BA00DE915A /* TripListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,9 +87,9 @@
 				2C3A98612AF2CFE700956C91 /* Models */,
 				2C3A98642AF2D03900956C91 /* Views */,
 				2C3A98652AF2D03F00956C91 /* Presenters */,
+				2C4F04822AF7AE40004889D1 /* Helpers */,
 				2C3A984B2AF2870200956C91 /* AppDelegate.swift */,
 				2C3A984D2AF2870200956C91 /* SceneDelegate.swift */,
-				2C3A985F2AF2CE7800956C91 /* Constants.swift */,
 				2C3A98542AF2870500956C91 /* Assets.xcassets */,
 				2C3A98562AF2870500956C91 /* LaunchScreen.storyboard */,
 				2C3A98592AF2870500956C91 /* Info.plist */,
@@ -113,6 +125,28 @@
 				2CFCE7032AF6D7D1006C1BB1 /* TripList */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2C4F04822AF7AE40004889D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C4F04902AF7B182004889D1 /* Fonts */,
+				2C3A985F2AF2CE7800956C91 /* Constants.swift */,
+				2C4F048E2AF7AF4E004889D1 /* Fonts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2C4F04902AF7B182004889D1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C4F04952AF7B19C004889D1 /* Montserrat-Bold.ttf */,
+				2C4F04942AF7B19C004889D1 /* Montserrat-Light.ttf */,
+				2C4F04932AF7B19C004889D1 /* Montserrat-Medium.ttf */,
+				2C4F04912AF7B19C004889D1 /* Montserrat-Regular.ttf */,
+				2C4F04922AF7B19C004889D1 /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2CFCE7022AF6D7C6006C1BB1 /* MainMap */ = {
@@ -197,9 +231,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4F04992AF7B19C004889D1 /* Montserrat-Light.ttf in Resources */,
+				2C4F04962AF7B19C004889D1 /* Montserrat-Regular.ttf in Resources */,
 				2C3A98582AF2870500956C91 /* LaunchScreen.storyboard in Resources */,
 				2C3A98552AF2870500956C91 /* Assets.xcassets in Resources */,
+				2C4F049A2AF7B19C004889D1 /* Montserrat-Bold.ttf in Resources */,
 				2C3A98532AF2870200956C91 /* Main.storyboard in Resources */,
+				2C4F04982AF7B19C004889D1 /* Montserrat-Medium.ttf in Resources */,
+				2C4F04972AF7B19C004889D1 /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +253,7 @@
 				2CDE81FF2AF4065900DE915A /* TripListViewController.swift in Sources */,
 				2C3A986B2AF2D97900956C91 /* MainMapViewController.swift in Sources */,
 				2C9BA5EE2AF580A900DCAD36 /* TripListPresenter.swift in Sources */,
+				2C4F048F2AF7AF4E004889D1 /* Fonts.swift in Sources */,
 				2C3A984C2AF2870200956C91 /* AppDelegate.swift in Sources */,
 				2C3A98692AF2D38500956C91 /* StationManager.swift in Sources */,
 				2C3A98632AF2D03400956C91 /* StationModel.swift in Sources */,

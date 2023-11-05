@@ -14,6 +14,7 @@ class MainMapViewController: UIViewController {
     @IBOutlet weak var listTripsButton: UIButton!
     let locationManager = CLLocationManager()
     private let mainMapPresenter = MainMapPresenter()
+    var selectedAnnotationView: MKAnnotationView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,11 @@ class MainMapViewController: UIViewController {
     
     // Setting up view
     func setButtonToDown() {
-        listTripsButton.setTitle("List Trips", for: .normal)
-        listTripsButton.setTitleColor(.white, for: .normal)
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont(name: Fonts.montserratSemibold, size: 18) as Any,
+            .foregroundColor: UIColor.white,
+        ]
+        listTripsButton.setAttributedTitle(NSAttributedString(string: "List Trips", attributes: attributes), for: .normal)
         listTripsButton.backgroundColor = UIColor(named: Constants.colorPrimaryBlue)
         listTripsButton.layer.cornerRadius = listTripsButton.bounds.height / 2
         listTripsButton.isHidden = true
@@ -79,10 +83,18 @@ extension MainMapViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if view.annotation is MKUserLocation {
+           return
+        }
+        self.selectedAnnotationView = view
         mainMapPresenter.annotationSelected(annotationView: view)
     }
     
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        if view.annotation is MKUserLocation {
+           return
+        }
+        self.selectedAnnotationView = nil
         view.image = UIImage(named: Constants.imagePoint)
         self.listTripsButton.isHidden = true
     }

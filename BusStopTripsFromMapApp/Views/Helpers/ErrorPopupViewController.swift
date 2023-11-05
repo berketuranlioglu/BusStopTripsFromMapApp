@@ -28,10 +28,15 @@ class ErrorPopupViewController: UIViewController {
         popupView.layer.cornerRadius = 12
         
         popupHeaderLabel.text = popupHeaderText ?? "The trip you selected is full."
+        popupHeaderLabel.font = UIFont(name: Fonts.montserratSemibold, size: 16)
         popupDetailLabel.text = popupDetailText ?? "Please select another one."
+        popupDetailLabel.font = UIFont(name: Fonts.montserratRegular, size: 14)
         
-        selectTripButton.setTitle(selectTripButtonText ?? "Select a Trip", for: .normal)
-        selectTripButton.setTitleColor(.white, for: .normal)
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont(name: Fonts.montserratSemibold, size: 14) as Any,
+            .foregroundColor: UIColor.white,
+        ]
+        selectTripButton.setAttributedTitle(NSAttributedString(string: selectTripButtonText ?? "Select a Trip", attributes: attributes), for: .normal)
         selectTripButton.backgroundColor = UIColor(named: Constants.colorPrimaryBlue)
         selectTripButton.layer.cornerRadius = selectTripButton.bounds.height / 2
     }

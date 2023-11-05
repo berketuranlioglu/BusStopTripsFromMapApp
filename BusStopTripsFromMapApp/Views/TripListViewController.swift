@@ -27,7 +27,13 @@ class TripListViewController: UIViewController {
     
     func setViews() {
         tripsHeaderLabel.text = "Trips"
-        backButton.setTitle("Back", for: .normal)
+        tripsHeaderLabel.font = UIFont(name: Fonts.montserratSemibold, size: 16)
+        
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont(name: Fonts.montserratSemibold, size: 16) as Any,
+            .foregroundColor: UIColor(named: Constants.colorPrimaryBlue) as Any,
+        ]
+        backButton.setAttributedTitle(NSAttributedString(string: "Back", attributes: attributes), for: .normal)
     }
     
     // IBActions
@@ -50,10 +56,16 @@ extension TripListViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath) as! TripListTableViewCell
         let detailedInfo = self.trips[indexPath.row]
         cell.busNameLabel.text = detailedInfo.bus_name
+        cell.busNameLabel.font = UIFont(name: Fonts.montserratSemibold, size: 16)
         cell.timeLabel.text = detailedInfo.time
+        cell.timeLabel.font = UIFont(name: Fonts.montserratSemibold, size: 14)
         
-        cell.bookButton.setTitle("Book", for: .normal)
-        cell.bookButton.setTitleColor(.white, for: .normal)
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont(name: Fonts.montserratSemibold, size: 14) as Any,
+            .foregroundColor: UIColor.white,
+        ]
+        cell.bookButton.setAttributedTitle(NSAttributedString(string: "Book", attributes: attributes), for: .normal)
+        
         cell.bookButton.backgroundColor = UIColor(named: Constants.colorPrimaryBlue)
         cell.bookButton.layer.cornerRadius = cell.bookButton.bounds.height / 2
         
