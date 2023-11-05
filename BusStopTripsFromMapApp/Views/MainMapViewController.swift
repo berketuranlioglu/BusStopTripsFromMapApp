@@ -67,9 +67,13 @@ extension MainMapViewController: MKMapViewDelegate {
             return nil
         }
         
-        var annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
-        
-        annotationView.image = UIImage(named: Constants.imagePoint)
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")
+            if annotationView == nil {
+                annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "custom")
+            } else {
+                annotationView?.annotation = annotation
+            }
+        annotationView?.image = UIImage(named: Constants.imagePoint)
         
         return annotationView
     }
@@ -106,12 +110,27 @@ extension MainMapViewController: MainMapViewDelegate {
         DispatchQueue.main.async {
             let tripsBubble = UILabel()
             tripsBubble.text = trips
-            tripsBubble.textColor = .white
-            tripsBubble.backgroundColor = .black
-            annotationView.image = UIImage(named: Constants.imageSelectedPoint)
+            
+            annotationView.image = UIImage(named: Constants.imagePoint)!.noir
             annotationView.canShowCallout = true
             annotationView.detailCalloutAccessoryView = tripsBubble
             self.listTripsButton.isHidden = false
         }
     }
 }
+
+// MARK: - UIImage
+// new version to prevent using selected point image
+extension UIImage {
+    var noir: UIImage {
+        let context = CIContext(options: nil)
+        let currentFilter = CIFilter(name: "CIPhotoEffectNoir")!
+        currentFilter.setValue(CIImage(image: self), forKey: kCIInputImageKey)
+        let output = currentFilter.outputImage!
+        let cgImage = context.createCGImage(output, from: output.extent)!
+        let processedImage = UIImage(cgImage: cgImage, scale: scale, orientation: imageOrientation)
+
+        return processedImage
+    }
+}
+

@@ -69,7 +69,9 @@ extension TripListViewController: UITableViewDelegate, UITableViewDataSource {
 extension TripListViewController: TripListViewDelegate {
     func handleResponse(isSuccess: Bool) {
         if isSuccess {
-            self.dismiss(animated: true)
+            DispatchQueue.main.async {
+                self.dismiss(animated: true)
+            }
         } else {
             DispatchQueue.main.async {
                 let sb = UIStoryboard(name: "Main", bundle: nil)

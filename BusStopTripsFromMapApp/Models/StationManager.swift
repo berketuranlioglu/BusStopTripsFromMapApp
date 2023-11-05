@@ -60,7 +60,8 @@ class StationManager {
         
         // URLSession and the rest
         let session = URLSession(configuration: .default)
-        let request = URLRequest(url: url)
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
         let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
             
             // return if error
@@ -70,6 +71,7 @@ class StationManager {
             }
             
             if let httpResponse = response as? HTTPURLResponse {
+                print(httpResponse.statusCode)
                 handler(httpResponse.statusCode)
             } else {
                 handler(400)
